@@ -1,7 +1,7 @@
 ## Projeto do Portifolio
-#### FASE: Desenvolvimento (0/7):
-- Navbar
-- Hero Section
+#### FASE: Desenvolvimento (2/7):
+- Navbar (Ok)
+- Hero Section (Ok)
 - About Me Section
 - Tools Section
 - Portfolio section
