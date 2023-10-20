@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/Navbar'
+import { Tabs } from '@/components/NavSelection'
 import Image from 'next/image'
 import perfilPhoto from 'public/perfil.png'
 import {
@@ -7,6 +8,7 @@ import {
   DiscordLogoIcon,
 } from '@radix-ui/react-icons'
 import Link from 'next/link'
+import { Button } from '@/components/Button'
 
 export default function Home() {
   return (
@@ -23,20 +25,20 @@ export default function Home() {
       </Navbar.Root>
 
       {/* Main section */}
-      <div className="flex flex-row w-full items-center justify-evenly p-14 my-10">
+      <div className="flex flex-row w-full items-center justify-evenly p-14 my-16">
         <div className="flex flex-col items-center leading-loose">
           <div className="text-3xl font-regular mb-2">Hello, I am</div>
           <div className="text-5xl font-extrabold mb-4">André Teizen</div>
           <div className="text-5xl font-medium mb-8">Full-stack Developer</div>
-          <div className="flex flex-row my-7">
-            <button className="rounded-full mx-5 py-2 px-7 border-4 border-secondary-light hover:bg-secondary-light hover:text-primary-light">
+          <div className="flex flex-row my-7 w-full justify-evenly h-14">
+            <Button id="DownloadCV" key="DownloadCV" className="px-4">
               Download CV
-            </button>
-            <button className="text-primary-light rounded-full mx-5 py-2 px-7 border-4 border-secondary-light bg-secondary-light hover:bg-primary-light hover:text-secondary-light">
+            </Button>
+            <Button id="ContactInfo" key="ContactInfo" styleType='filled' className="px-4">
               Contact Info
-            </button>
+            </Button>
           </div>
-          <div className="flex flex-row mt-10 w-full h-10 justify-around">
+          <div className="flex flex-row mt-10 w-full h-10 justify-evenly">
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/andre-teizen/"
@@ -45,7 +47,7 @@ export default function Home() {
               <GitHubLogoIcon
                 width="2.5rem"
                 height="2.5rem"
-                className="hover:text-secondary-light/60"
+                className="hover:text-primary-color/60"
               />
             </Link>
             <Link
@@ -56,7 +58,7 @@ export default function Home() {
               <LinkedInLogoIcon
                 width="2.5rem"
                 height="2.5rem"
-                className="hover:text-secondary-light/60"
+                className="hover:text-primary-color/60"
               />
             </Link>
             <Link
@@ -67,7 +69,7 @@ export default function Home() {
               <DiscordLogoIcon
                 width="2.5rem"
                 height="2.5rem"
-                className="hover:text-secondary-light/60"
+                className="hover:text-primary-color/60"
               />
             </Link>
           </div>
@@ -76,9 +78,15 @@ export default function Home() {
           src={perfilPhoto}
           alt="Picture of the author"
           sizes="20vw"
-          className="w-auto h-auto border-4 border-secondary-light rounded-full"
+          className="w-auto h-auto border-4 border-secondary-color rounded-full"
         />
       </div>
+
+      {/* About me section */}
+      <div className="text-3xl font-regular mb-2">Get to know more</div>
+      <div className="text-5xl font-extrabold mb-4">About Me</div>
+
+      <Tabs />
     </main>
   )
 }
