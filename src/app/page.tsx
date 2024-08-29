@@ -1,5 +1,5 @@
 import { Navbar } from '@/components/Navbar'
-import { Tabs } from '@/components/NavSelection'
+import { TabsAboutMe } from '@/components/NavSelection/AboutMe'
 import Image from 'next/image'
 import perfilPhoto from 'public/perfil.png'
 import {
@@ -8,9 +8,14 @@ import {
   DiscordLogoIcon,
 } from '@radix-ui/react-icons'
 import Link from 'next/link'
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ButtonTabsH'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { TabsTools } from '@/components/NavSelection/Tools'
 
 export default function Home() {
+
+
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Navbar */}
@@ -66,7 +71,21 @@ export default function Home() {
               href="https://bfas.short.gy/discord-andre"
               passHref
             >
-              <DiscordLogoIcon
+              <FontAwesomeIcon
+                icon={faDiscord}
+                width="2.5rem"
+                height="2.5rem"
+                className="hover:text-primary-color/60"
+              />
+            </Link>
+
+            <Link
+              target="_blank"
+              href="https://wa.me/5514991823065"
+              passHref
+            >
+              <FontAwesomeIcon
+                icon={faWhatsapp}
                 width="2.5rem"
                 height="2.5rem"
                 className="hover:text-primary-color/60"
@@ -83,10 +102,30 @@ export default function Home() {
       </div>
 
       {/* About me section */}
-      <div className="text-3xl font-regular mb-2">Get to know more</div>
-      <div className="text-5xl font-extrabold mb-4">About Me</div>
+      <div id='aboutme' className='w-full flex flex-col justify-center items-center mt-20'>
+        <div className="text-3xl font-regular mb-2">Get to know more</div>
+        <div className="text-5xl font-extrabold mb-4">About Me</div>
 
-      <Tabs />
+        <TabsAboutMe />
+      </div>
+
+      {/* Tools section */}
+      <div id='tools' className='w-full h-fit flex flex-col justify-center items-center mt-20'>
+        <div className="text-3xl font-regular mb-2">What</div>
+        <div className="text-5xl font-extrabold mb-2">TOOLS</div>
+        <div className="text-3xl font-regular mb-2">I use</div>
+        <TabsTools />
+      </div>
+
+      
+      {/* Portfolio section */}
+      <div id='portfolio' className='w-full flex flex-col justify-center items-center mt-80'>
+        <div className="text-3xl font-regular mb-2">See my</div>
+        <div className="text-5xl font-extrabold mb-4">Portfolio</div>
+
+        <TabsAboutMe />
+      </div>
+
     </main>
   )
 }
