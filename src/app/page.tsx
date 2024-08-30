@@ -10,7 +10,7 @@ import { faWhatsapp, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { TabsTools } from '@/components/NavSelection/Tools'
 import PortfolioGroup from '@/components/PortfolioGroup'
-import PrtrackPrint from '@public/Portfolio/prtrack2.png'
+import PrtrackPrint from '@public/Portfolio/PRTrack2.png'
 import Footer from '@/components/Footer'
 
 export default function Home() {
