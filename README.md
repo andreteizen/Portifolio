@@ -1,5 +1,7 @@
 ## Projeto do Portifolio
+
 #### FASE: Desenvolvimento (2/7):
+
 - Navbar (Ok)
 - Hero Section (Ok)
 - About Me Section
@@ -9,13 +11,15 @@
 - Footer
 
 ### Descrição
+
 Projeto do meu portifolio pessoal, nele utilizo muitas ferramentas modernas que são utilizadas no desenvolvimento web hoje em dia:
 
 ##### Design:
+
 - Figma (wireframe e protótipo)
 
-
 ##### Front-end:
+
 - Next.JS
 - React.JS
 - Typescript
@@ -25,6 +29,6 @@ Projeto do meu portifolio pessoal, nele utilizo muitas ferramentas modernas que 
 - Cypress
 - ESLint
 
-
 ##### Back-end:
+
 - Node.JS

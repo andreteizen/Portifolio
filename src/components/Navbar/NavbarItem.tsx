@@ -6,7 +6,7 @@ interface NavbarItemProps extends LinkProps {
 
 export function NavbarItem({ text, ...rest }: NavbarItemProps) {
   return (
-    <li className="mx-8 hover:text-primary-color/70">
+    <li className="hover:text-primary-color/70 mx-8">
       <Link className="hover:text-primary-color/70" href={rest.href}>
         {text}
       </Link>
