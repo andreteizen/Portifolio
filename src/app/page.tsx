@@ -104,7 +104,7 @@ export default function Home() {
           src={perfilPhoto}
           alt="Picture of the author"
           sizes="20vw"
-          className="border-secondary-color h-auto w-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105"
+          className="border-secondary-color z-[90] h-auto w-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105"
           style={{
             clipPath:
               'polygon(10% 0%, 90% 0%, 100% 30%, 90% 100%, 10% 100%, 0% 70%)',
