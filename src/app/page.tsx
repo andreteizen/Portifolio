@@ -23,6 +23,7 @@ export default function Home() {
           <Navbar.Item href={'#aboutme'} text="About me" />
           <Navbar.Item href={'#tools'} text="Tools" />
           <Navbar.Item href={'#portfolio'} text="Portfolio" />
+          <Navbar.DarkModeToggle />
         </Navbar.Items>
       </Navbar.Root>
 
