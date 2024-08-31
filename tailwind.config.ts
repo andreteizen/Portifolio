@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      transitionProperty: {
+        colors: 'background-color, color',
+      },
       colors: {
         'primary-color': 'hsl(var(--foreground))',
         'secondary-color': 'hsl(var(--background))',
