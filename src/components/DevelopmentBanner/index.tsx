@@ -18,10 +18,10 @@ export function DevelopmentBanner() {
       >
         {/* Texto duplicado para efeito contínuo */}
         <span className="mr-10">
-          Este site está em desenvolvimento! 🚧 Novas atualizações em breve.
+          This website is under development! 🚧 New updates coming soon.
         </span>
         <span className="mr-10">
-          Este site está em desenvolvimento! 🚧 Novas atualizações em breve.
+          This website is under development! 🚧 New updates coming soon.
         </span>
       </motion.div>
     </div>
