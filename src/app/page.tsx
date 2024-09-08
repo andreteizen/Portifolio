@@ -12,6 +12,7 @@ import { TabsTools } from '@/components/NavSelection/Tools'
 import PortfolioGroup from '@/components/PortfolioGroup'
 import PrtrackPrint from '@public/Portfolio/PRTrack2.png'
 import Footer from '@/components/Footer'
+import { DevelopmentBanner } from '@/components/DevelopmentBanner'
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
           <Navbar.DarkModeToggle />
         </Navbar.Items>
       </Navbar.Root>
+
+      {/* Mensagem de site em desenvolvimento */}
+      <DevelopmentBanner />
 
       {/* Main section */}
       <div className="my-16 flex w-full flex-row items-center justify-evenly p-14">
