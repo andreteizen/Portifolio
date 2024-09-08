@@ -15,8 +15,11 @@ import GraphQLImg from '@public/Icons/graphql.png'
 import JestImg from '@public/Icons/jest.png'
 import CypressImg from '@public/Icons/cypress.png'
 import EslintImg from '@public/Icons/ESLint_logo.svg'
+
 import NodeImg from '@public/Icons/nodejs.svg'
 import PrismaImg from '@public/Icons/prisma.svg'
+import SqlImg from '@public/Icons/sql.png'
+import MongodbImg from '@public/Icons/mongodb.png'
 
 import GcpImg from '@public/Icons/gcp.svg'
 import KubernetsImg from '@public/Icons/kubernets.svg'
@@ -47,12 +50,6 @@ const tabsData = [
         </div>
         <div className="flex w-full justify-between">
           <Cards
-            icon={StyledComponentsImg}
-            title="Style Components"
-            proficiency="Intermediate"
-          />
-          <Cards icon={ReduxImg} title="Redux" proficiency="Intermediate" />
-          <Cards
             icon={MaterialUiImg}
             title="Material UI"
             proficiency="Experienced"
@@ -62,10 +59,16 @@ const tabsData = [
             title="Context API"
             proficiency="Experienced"
           />
+          <Cards icon={EslintImg} title="ESLint" proficiency="Experienced" />
+          <Cards icon={ReduxImg} title="Redux" proficiency="Intermediate" />
         </div>
         <div className="flex w-full justify-between">
           <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
-          <Cards icon={EslintImg} title="ESLint" proficiency="Experienced" />
+          <Cards
+            icon={StyledComponentsImg}
+            title="Style Components"
+            proficiency="Intermediate"
+          />
           <Cards
             icon={EslintImg}
             title="ESLint"
@@ -85,31 +88,36 @@ const tabsData = [
   {
     label: 'Back-end',
     content: (
-      <div className="flex w-full justify-between">
-        <Cards icon={NodeImg} title="NodeJS" proficiency="Experienced" />
-        <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
-        <Cards icon={PrismaImg} title="PrismaORM" proficiency="Experienced" />
-        <Cards
-          icon={EslintImg}
-          title="ESLint"
-          proficiency="Experienced"
-          invisible
-        />
+      <div className="flex h-fit w-full flex-col space-y-10">
+        <div className="flex w-full justify-between">
+          <Cards icon={NodeImg} title="NodeJS" proficiency="Experienced" />
+          <Cards icon={PrismaImg} title="PrismaORM" proficiency="Experienced" />
+          <Cards icon={SqlImg} title="SQL" proficiency="Experienced" />
+          <Cards icon={MongodbImg} title="noSQL" proficiency="Experienced" />
+        </div>
+        <div className="flex w-full justify-start">
+          <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
+        </div>
       </div>
     ),
   },
   {
     label: 'Infrastructure',
     content: (
-      <div className="flex w-full justify-between">
-        <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
-        <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
-        <Cards
-          icon={KubernetsImg}
-          title="Kubernets"
-          proficiency="Intermediate"
-        />
-        <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
+      <div className="flex h-fit w-full flex-col space-y-10">
+        <div className="flex w-full justify-between">
+          <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
+          <Cards icon={MongodbImg} title="MongoDB" proficiency="Experienced" />
+          <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
+          <Cards
+            icon={KubernetsImg}
+            title="Kubernets"
+            proficiency="Intermediate"
+          />
+        </div>
+        <div className="flex w-full justify-start">
+          <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
+        </div>
       </div>
     ),
   },
@@ -139,10 +147,14 @@ const tabsData = [
     ),
   },
   {
-    label: 'Testes',
+    label: 'Tests',
     content: (
       <div className="flex w-full justify-between">
-        <Cards icon={JestImg} title="Jest (TDD)" proficiency="Intermediate" />
+        <Cards
+          icon={JestImg}
+          title="Jest (Unit Test)"
+          proficiency="Intermediate"
+        />
         <Cards
           icon={CypressImg}
           title="Cypress (E2E)"
