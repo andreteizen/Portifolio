@@ -11,6 +11,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { TabsTools } from '@/components/NavSelection/Tools'
 import PortfolioGroup from '@/components/PortfolioGroup'
 import PrtrackPrint from '@public/Portfolio/PRTrack2.png'
+import CarhubPrint from '@public/Portfolio/carhub.png'
+import HilinkPrint from '@public/Portfolio/hilink.png'
 import Footer from '@/components/Footer'
 import { DevelopmentBanner } from '@/components/DevelopmentBanner'
 
@@ -149,13 +151,39 @@ export default function Home() {
 
         <PortfolioGroup
           className="mt-20"
+          printscreen={HilinkPrint}
+          title="Hilink"
+          shortDescription="A travel platform designed to inspire your next adventure, offering curated routes and destination guides."
+          description={`Fuel your wanderlust with our interactive travel platform. Find the perfect route, connect with like-minded travelers, and share your adventures. Whether you're seeking off-the-beaten-path experiences or well-trodden paths, we've got you covered.`}
+          projectType="Front-end"
+          live="https://travel-app-red-eta.vercel.app/"
+          githubLink="https://github.com/andreteizen/travel_app"
+          tools={['Next.JS', 'React.JS', 'Typescript', 'TailwindCSS', 'ESLint']}
+        />
+
+        <PortfolioGroup
+          className="mt-20"
+          printscreen={CarhubPrint}
+          title="CarHub"
+          shortDescription="Streamline your car rental experience with our effortless booking process."
+          description={`Save time and money when renting a car. With our comparator, you can easily find the vehicle that best suits your travel style and budget. In addition, we offer a wide variety of vehicles, from economy to luxury, so you can choose what best meets your needs.`}
+          projectType="Front-end"
+          live="https://car-showcase-two-mu.vercel.app/"
+          githubLink="https://github.com/andreteizen/Car-showcase"
+          tools={['Next.JS', 'React.JS', 'Typescript', 'TailwindCSS', 'ESLint']}
+        />
+
+        <PortfolioGroup
+          className="mt-20"
           printscreen={PrtrackPrint}
           title="PR Track"
-          description="A social networking and activity tracking platform for endurance sports enthusiasts. This website features user login, interaction capabilities between users, performance scoring for each sport, and integration with various APIs, such as Strava, Google Login, SendGrid, and AWS Lambda functions."
+          shortDescription="A social networking and activity tracking platform for endurance sports enthusiasts, offering user login, interaction features, performance scoring for each sport, and integration with APIs like Strava, Google Login, SendGrid, and AWS Lambda."
+          description={`An interactive platform for endurance sports enthusiasts that combines social networking with activity tracking.\n Users can log in, connect with others, track their performance across various sports, and view personalized performance scores, fostering an engaging and competitive environment.`}
+          projectType="Fullstack"
           live="https://www.prtrack.live/"
           tools={[
-            'NextJS',
-            'ReactJS',
+            'Next.JS',
+            'React.JS',
             'Typescript',
             'TailwindCSS',
             'ContextAPI',

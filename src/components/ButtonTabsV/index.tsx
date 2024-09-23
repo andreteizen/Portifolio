@@ -16,7 +16,7 @@ export function Button({
   const activeStatus =
     (styleType === '' && !active
       ? 'rounded-full'
-      : 'bg-primary-color text-white rounded-full') +
+      : 'bg-primary-color text-white rounded-full dark:text-black') +
     ' transition-colors duration-400' // O status de ativo é definido pela class btn-filled
   const classType = twMerge(activeStatus, rest.className) // Resolve conflitos de CSS
 

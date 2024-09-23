@@ -25,6 +25,7 @@ import GcpImg from '@public/Icons/gcp.svg'
 import KubernetsImg from '@public/Icons/kubernets.svg'
 import DockerImg from '@public/Icons/docker.svg'
 import AwsImg from '@public/Icons/aws.svg'
+import TerraformImg from '@public/Icons/terraform.png'
 
 import FigmaImg from '@public/Icons/figma.svg'
 import PhotoshopImg from '@public/Icons/photoshop.svg'
@@ -115,8 +116,25 @@ const tabsData = [
             proficiency="Intermediate"
           />
         </div>
-        <div className="flex w-full justify-start">
+        <div className="flex w-full justify-between">
+          <Cards
+            icon={TerraformImg}
+            title="Terraform"
+            proficiency="Intermediate"
+          />
           <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
+          <Cards
+            icon={EslintImg}
+            title="ESLint"
+            proficiency="Experienced"
+            invisible
+          />
+          <Cards
+            icon={EslintImg}
+            title="ESLint"
+            proficiency="Experienced"
+            invisible
+          />
         </div>
       </div>
     ),
