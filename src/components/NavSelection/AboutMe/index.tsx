@@ -126,7 +126,7 @@ const tabsData = [
           href="https://www.linkedin.com/company/petloyalty/"
           className="font-semibold"
         >
-          ShelterBuddy (formerly Pet Loyalty)
+          Pet Loyalty (formerly ShelterBuddy)
         </Link>
         . I also have experience in the data field, having worked for over 2
         years as a Data Scientist at{' '}
@@ -175,7 +175,7 @@ export function TabsAboutMe() {
         ))}
       </div>
 
-      <hr className="solid border-primary-color mx-48 h-full border-2" />
+      <hr className="solid border-primary-color mx-10 h-full border-2" />
 
       <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
     </div>
