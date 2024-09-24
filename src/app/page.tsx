@@ -158,7 +158,14 @@ export default function Home() {
           projectType="Front-end"
           live="https://travel-app-red-eta.vercel.app/"
           githubLink="https://github.com/andreteizen/travel_app"
-          tools={['Next.JS', 'React.JS', 'Typescript', 'TailwindCSS', 'ESLint']}
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'TailwindCSS',
+            'ESLint',
+            'Figma',
+          ]}
         />
 
         <PortfolioGroup
@@ -170,7 +177,14 @@ export default function Home() {
           projectType="Front-end"
           live="https://car-showcase-two-mu.vercel.app/"
           githubLink="https://github.com/andreteizen/Car-showcase"
-          tools={['Next.JS', 'React.JS', 'Typescript', 'TailwindCSS', 'ESLint']}
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'TailwindCSS',
+            'ESLint',
+            'Figma',
+          ]}
         />
 
         <PortfolioGroup
@@ -187,10 +201,12 @@ export default function Home() {
             'Typescript',
             'TailwindCSS',
             'ContextAPI',
-            'ESLint',
             'AWS',
             'PrismaORM',
             'Jest',
+            'Terraform',
+            'Cypress',
+            'Figma',
           ]}
         />
       </div>
