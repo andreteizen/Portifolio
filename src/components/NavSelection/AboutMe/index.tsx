@@ -3,6 +3,12 @@
 import { useState } from 'react'
 import { Button } from '../../ButtonTabsH'
 import Link from 'next/link'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 
 const tabsData = [
   {
@@ -156,28 +162,45 @@ export function TabsAboutMe() {
     tabNumber: number,
   ) => {
     e.preventDefault()
-    console.log(tabNumber)
     setActiveTabIndex(tabNumber)
   }
 
   return (
-    <div className="m-20 flex h-[20vw] w-3/4 flex-row items-center justify-items-stretch px-10">
-      <div className="flex h-full w-fit flex-col justify-center space-y-5">
-        {tabsData.map((tab, idx) => (
-          <Button
-            key={idx}
-            className="px-4 py-1"
-            active={activeTabIndex === idx}
-            onClick={(e) => handleClick(e, idx)}
-          >
-            {tab.label}
-          </Button>
-        ))}
+    <>
+      <div className="md:m-20 hidden md:flex md:h-[20vw] md:w-3/4 flex-col md:flex-row items-center justify-items-stretch md:px-10">
+        <div className="flex h-full w-fit md:flex-col justify-center space-y-5">
+          {tabsData.map((tab, idx) => (
+            <Button
+              key={idx}
+              className="px-4 py-1"
+              active={activeTabIndex === idx}
+              onClick={(e) => handleClick(e, idx)}
+            >
+              {tab.label}
+            </Button>
+          ))}
+        </div>
+
+        <hr className="solid border-primary-color mx-10 h-full border-2 hidden md:block" />
+
+        <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
       </div>
 
-      <hr className="solid border-primary-color mx-10 h-full border-2" />
-
-      <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
-    </div>
+      <Accordion
+        defaultValue="item-1"
+        className="md:hidden"
+        type="single"
+        collapsible
+      >
+        {tabsData.map((tab, idx) => (
+          <AccordionItem key={idx} value={`item-${idx + 1}`} className="px-4">
+            <AccordionTrigger className="text-xl mb-6">
+              {tab.label}
+            </AccordionTrigger>
+            <AccordionContent>{tab.content}</AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </>
   )
 }

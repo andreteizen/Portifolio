@@ -34,132 +34,84 @@ const tabsData = [
   {
     label: 'Front-end',
     content: (
-      <div className="flex h-fit w-full flex-col space-y-10">
-        <div className="flex w-full justify-between">
-          <Cards icon={ReactImg} title="React.JS" proficiency="Experienced" />
-          <Cards icon={NextImg} title="Next.JS" proficiency="Experienced" />
-          <Cards
-            icon={TypescriptImg}
-            title="Typescript"
-            proficiency="Experienced"
-          />
-          <Cards
-            icon={TailwindImg}
-            title="TailwindCSS"
-            proficiency="Experienced"
-          />
-        </div>
-        <div className="flex w-full justify-between">
-          <Cards
-            icon={MaterialUiImg}
-            title="Material UI"
-            proficiency="Experienced"
-          />
-          <Cards
-            icon={ReactImg}
-            title="Context API"
-            proficiency="Experienced"
-          />
-          <Cards icon={EslintImg} title="ESLint" proficiency="Experienced" />
-          <Cards icon={ReduxImg} title="Redux" proficiency="Intermediate" />
-        </div>
-        <div className="flex w-full justify-between">
-          <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
-          <Cards
-            icon={StyledComponentsImg}
-            title="Style Components"
-            proficiency="Intermediate"
-          />
-          <Cards
-            icon={EslintImg}
-            title="ESLint"
-            proficiency="Experienced"
-            invisible
-          />
-          <Cards
-            icon={EslintImg}
-            title="ESLint"
-            proficiency="Experienced"
-            invisible
-          />
-        </div>
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+        <Cards icon={ReactImg} title="React.JS" proficiency="Experienced" />
+        <Cards icon={NextImg} title="Next.JS" proficiency="Experienced" />
+        <Cards
+          icon={TypescriptImg}
+          title="Typescript"
+          proficiency="Experienced"
+        />
+        <Cards
+          icon={TailwindImg}
+          title="TailwindCSS"
+          proficiency="Experienced"
+        />
+        <Cards
+          icon={MaterialUiImg}
+          title="Material UI"
+          proficiency="Experienced"
+          className="whitespace-nowrap"
+        />
+        <Cards
+          icon={ReactImg}
+          title="Context API"
+          proficiency="Experienced"
+          className="whitespace-nowrap"
+        />
+        <Cards icon={EslintImg} title="ESLint" proficiency="Experienced" />
+        <Cards icon={ReduxImg} title="Redux" proficiency="Intermediate" />
+        <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
+        <Cards
+          icon={StyledComponentsImg}
+          title="Style Components"
+          proficiency="Intermediate"
+        />
       </div>
     ),
   },
   {
     label: 'Back-end',
     content: (
-      <div className="flex h-fit w-full flex-col space-y-10">
-        <div className="flex w-full justify-between">
-          <Cards icon={NodeImg} title="NodeJS" proficiency="Experienced" />
-          <Cards icon={PrismaImg} title="PrismaORM" proficiency="Experienced" />
-          <Cards icon={SqlImg} title="SQL" proficiency="Experienced" />
-          <Cards icon={MongodbImg} title="noSQL" proficiency="Experienced" />
-        </div>
-        <div className="flex w-full justify-start">
-          <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
-        </div>
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+        <Cards icon={NodeImg} title="NodeJS" proficiency="Experienced" />
+        <Cards icon={PrismaImg} title="PrismaORM" proficiency="Experienced" />
+        <Cards icon={SqlImg} title="SQL" proficiency="Experienced" />
+        <Cards icon={MongodbImg} title="noSQL" proficiency="Experienced" />
+        <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
       </div>
     ),
   },
   {
     label: 'Infrastructure',
     content: (
-      <div className="flex h-fit w-full flex-col space-y-10">
-        <div className="flex w-full justify-between">
-          <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
-          <Cards icon={MongodbImg} title="MongoDB" proficiency="Experienced" />
-          <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
-          <Cards
-            icon={KubernetsImg}
-            title="Kubernets"
-            proficiency="Intermediate"
-          />
-        </div>
-        <div className="flex w-full justify-between">
-          <Cards
-            icon={TerraformImg}
-            title="Terraform"
-            proficiency="Intermediate"
-          />
-          <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
-          <Cards
-            icon={EslintImg}
-            title="ESLint"
-            proficiency="Experienced"
-            invisible
-          />
-          <Cards
-            icon={EslintImg}
-            title="ESLint"
-            proficiency="Experienced"
-            invisible
-          />
-        </div>
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+        <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
+        <Cards icon={MongodbImg} title="MongoDB" proficiency="Experienced" />
+        <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
+        <Cards
+          icon={KubernetsImg}
+          title="Kubernets"
+          proficiency="Intermediate"
+        />
+        <Cards
+          icon={TerraformImg}
+          title="Terraform"
+          proficiency="Intermediate"
+        />
+        <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
       </div>
     ),
   },
   {
     label: 'Web Design',
     content: (
-      <div className="flex w-full justify-between">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4 justify-center">
         <Cards icon={FigmaImg} title="Figma" proficiency="Intermediate" />
         <Cards
           icon={PhotoshopImg}
           title="PhotoShop"
           proficiency="Intermediate"
-        />
-        <Cards
-          icon={EslintImg}
-          title="ESLint"
-          proficiency="Experienced"
-          invisible
-        />
-        <Cards
-          icon={EslintImg}
-          title="ESLint"
-          proficiency="Experienced"
-          invisible
         />
       </div>
     ),
@@ -167,7 +119,7 @@ const tabsData = [
   {
     label: 'Tests',
     content: (
-      <div className="flex w-full justify-between">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
         <Cards
           icon={JestImg}
           title="Jest (Unit Test)"
@@ -177,18 +129,6 @@ const tabsData = [
           icon={CypressImg}
           title="Cypress (E2E)"
           proficiency="Intermediate"
-        />
-        <Cards
-          icon={EslintImg}
-          title="ESLint"
-          proficiency="Experienced"
-          invisible
-        />
-        <Cards
-          icon={EslintImg}
-          title="ESLint"
-          proficiency="Experienced"
-          invisible
         />
       </div>
     ),
@@ -207,23 +147,39 @@ export function TabsTools() {
   }
 
   return (
-    <div className="m-20 flex h-[20vw] w-full flex-col items-center justify-items-stretch px-10">
-      <div className="flex h-fit w-[60%] flex-row justify-between space-x-5">
-        {tabsData.map((tab, idx) => (
-          <Button
-            key={idx}
-            className="px-10 py-2 text-lg"
-            active={activeTabIndex === idx}
-            onClick={(e) => handleClick(e, idx)}
-          >
-            {tab.label}
-          </Button>
-        ))}
+    <>
+      <div className="md:m-20 hidden md:flex h-[20vw] w-full flex-col items-center md:justify-items-stretch md:px-10">
+        <div className="flex h-fit md:w-[60%] flex-row justify-between space-x-5">
+          {tabsData.map((tab, idx) => (
+            <Button
+              key={idx}
+              className="px-10 py-2 text-lg"
+              active={activeTabIndex === idx}
+              onClick={(e) => handleClick(e, idx)}
+            >
+              {tab.label}
+            </Button>
+          ))}
+        </div>
+
+        <hr className="hidden md:block solid border-primary-color mb-20 mt-10 w-[80%] border" />
+
+        <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
       </div>
 
-      <hr className="solid border-primary-color mb-20 mt-10 w-[80%] border" />
-
-      <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
-    </div>
+      <div className="flex flex-col md:hidden">
+        {tabsData.map((tab, idx) => (
+          <>
+            <h1
+              key={idx}
+              className="px-10 py-2 text-xl font-semibold text-center mt-10 mb-4"
+            >
+              {tab.label}
+            </h1>
+            <div>{tabsData[idx].content}</div>
+          </>
+        ))}
+      </div>
+    </>
   )
 }

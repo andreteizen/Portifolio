@@ -11,7 +11,7 @@ export default async function Footer() {
         All rights reserved © 2023 <b className="font-bold">André Teizen</b>
       </p>
 
-      <div className="flex h-10 w-fit flex-row justify-evenly space-x-7">
+      <div className="hidden md:flex h-10 w-fit flex-row justify-evenly space-x-7">
         <Link target="_blank" href="https://github.com/andreteizen" passHref>
           <GitHubLogoIcon
             width="2.5rem"

@@ -34,12 +34,18 @@ export default function Home() {
       <DevelopmentBanner />
 
       {/* Main section */}
-      <div className="my-16 flex w-full flex-row items-center justify-evenly p-14">
-        <div className="flex flex-col items-center leading-loose">
-          <div className="font-regular mb-2 text-3xl">Hello, I am</div>
-          <div className="mb-4 text-5xl font-extrabold">André Teizen</div>
-          <div className="mb-8 text-5xl font-medium">Full-stack Developer</div>
-          <div className="my-7 flex h-14 w-full flex-row justify-evenly">
+      <div className="my-16 flex w-full flex-col-reverse items-center justify-center p-6 md:flex-row md:justify-evenly md:p-14">
+        <div className="flex flex-col items-center leading-loose w-full md:w-fit">
+          <div className="font-regular mt-6 md:mt-0 mb-2 text-2xl md:text-3xl">
+            Hello, I am
+          </div>
+          <div className="mb-4 text-4xl font-extrabold md:text-5xl">
+            André Teizen
+          </div>
+          <div className="mb-8 text-3xl font-medium md:text-5xl">
+            Full-stack Developer
+          </div>
+          <div className="my-7 flex h-14 w-full flex-col items-center space-y-4 md:flex-row md:justify-evenly md:space-y-0">
             <a href="../../Arquivos/resume.pdf" download>
               <Button
                 id="DownloadCV"
@@ -52,16 +58,16 @@ export default function Home() {
             </a>
             {/* <CopyEmailButton /> */}
           </div>
-          <div className="mt-10 flex h-10 w-full flex-row justify-evenly">
+          <div className="mt-10 flex h-10 w-full flex-wrap space-x-4 md:flex-row justify-evenly md:space-x-0">
             <Link
               target="_blank"
               href="https://github.com/andreteizen"
               passHref
             >
               <GitHubLogoIcon
-                width="2.5rem"
-                height="2.5rem"
-                className="hover:text-primary-color/60"
+                width="2rem"
+                height="2rem"
+                className="text-primary-color/60 hover:text-primary-color"
               />
             </Link>
             <Link
@@ -70,9 +76,9 @@ export default function Home() {
               passHref
             >
               <LinkedInLogoIcon
-                width="2.5rem"
-                height="2.5rem"
-                className="hover:text-primary-color/60"
+                width="2rem"
+                height="2rem"
+                className="text-primary-color/60 hover:text-primary-color"
               />
             </Link>
             <Link
@@ -82,27 +88,25 @@ export default function Home() {
             >
               <FontAwesomeIcon
                 icon={faDiscord}
-                width="2.5rem"
-                height="2.5rem"
-                className="hover:text-primary-color/60"
+                width="2rem"
+                height="2rem"
+                className="text-primary-color/60 hover:text-primary-color"
               />
             </Link>
-
             <Link target="_blank" href="https://wa.me/5514991823065" passHref>
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                width="2.5rem"
-                height="2.5rem"
-                className="hover:text-primary-color/60"
+                width="2rem"
+                height="2rem"
+                className="text-primary-color/60 hover:text-primary-color"
               />
             </Link>
-
             <Link target="_blank" href="mailto:andre.teizen@gmail.com" passHref>
               <FontAwesomeIcon
                 icon={faEnvelope}
-                width="2.5rem"
-                height="2.5rem"
-                className="hover:text-primary-color/60"
+                width="2rem"
+                height="2rem"
+                className="text-primary-color/60 hover:text-primary-color"
               />
             </Link>
           </div>
@@ -110,8 +114,8 @@ export default function Home() {
         <Image
           src={perfilPhoto}
           alt="Picture of the author"
-          sizes="20vw"
-          className="border-secondary-color z-[90] h-auto w-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105"
+          sizes="40vw"
+          className="border-secondary-color z-[90] w-60 h-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105 md:w-auto"
           style={{
             clipPath:
               'polygon(10% 0%, 90% 0%, 100% 30%, 90% 100%, 10% 100%, 0% 70%)',
@@ -122,10 +126,14 @@ export default function Home() {
       {/* About me section */}
       <div
         id="aboutme"
-        className="mt-20 flex w-full flex-col items-center justify-center"
+        className="mt-36 md:mt-20 flex w-full flex-col items-center justify-center"
       >
-        <div className="font-regular mb-2 text-3xl">Get to know more</div>
-        <div className="mb-4 text-5xl font-extrabold">About Me</div>
+        <div className="font-regular mb-2 text-xl md:text-3xl hidden md:block">
+          Get to know more
+        </div>
+        <div className="mb-10 md:mb-4  text-4xl md:text-5xl font-extrabold">
+          About Me
+        </div>
 
         <TabsAboutMe />
       </div>
@@ -133,21 +141,23 @@ export default function Home() {
       {/* Tools section */}
       <div
         id="tools"
-        className="mt-20 flex h-fit w-full flex-col items-center justify-center"
+        className="mt-36 md:mt-20 flex h-fit w-full flex-col items-center justify-center"
       >
-        <div className="font-regular mb-2 text-3xl">What</div>
-        <div className="mb-2 text-5xl font-extrabold">TOOLS</div>
-        <div className="font-regular mb-2 text-3xl">I use</div>
+        <div className="font-regular mb-2 hidden md:block text-3xl">What</div>
+        <div className="mb-2 text-4xl md:text-5xl font-extrabold">TOOLS</div>
+        <div className="font-regular mb-2 hidden md:block text-3xl">I use</div>
         <TabsTools />
       </div>
 
       {/* Portfolio section */}
       <div
         id="portfolio"
-        className="mt-80 flex w-full flex-col items-center justify-center"
+        className="mt-40 flex w-full flex-col items-center justify-center"
       >
-        <div className="font-regular mb-2 text-3xl">See my</div>
-        <div className="mb-4 text-5xl font-extrabold">Portfolio</div>
+        <div className="font-regular mb-2 text-3xl hidden md:block">See my</div>
+        <div className="mb-4 text-4xl md:text-5xl font-extrabold">
+          Portfolio
+        </div>
 
         <PortfolioGroup
           className="mt-20"
