@@ -37,14 +37,36 @@ const tabsData = [
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
         <Cards icon={ReactImg} title="React.JS" proficiency="Experienced" />
         <Cards icon={NextImg} title="Next.JS" proficiency="Experienced" />
-        <Cards icon={TypescriptImg} title="Typescript" proficiency="Experienced" />
-        <Cards icon={TailwindImg} title="TailwindCSS" proficiency="Experienced" />
-        <Cards icon={MaterialUiImg} title="Material UI" proficiency="Experienced" className='whitespace-nowrap' />
-        <Cards icon={ReactImg} title="Context API" proficiency="Experienced" className='whitespace-nowrap' />
+        <Cards
+          icon={TypescriptImg}
+          title="Typescript"
+          proficiency="Experienced"
+        />
+        <Cards
+          icon={TailwindImg}
+          title="TailwindCSS"
+          proficiency="Experienced"
+        />
+        <Cards
+          icon={MaterialUiImg}
+          title="Material UI"
+          proficiency="Experienced"
+          className="whitespace-nowrap"
+        />
+        <Cards
+          icon={ReactImg}
+          title="Context API"
+          proficiency="Experienced"
+          className="whitespace-nowrap"
+        />
         <Cards icon={EslintImg} title="ESLint" proficiency="Experienced" />
         <Cards icon={ReduxImg} title="Redux" proficiency="Intermediate" />
         <Cards icon={GraphQLImg} title="GraphQL" proficiency="Intermediate" />
-        <Cards icon={StyledComponentsImg} title="Style Components" proficiency="Intermediate" />
+        <Cards
+          icon={StyledComponentsImg}
+          title="Style Components"
+          proficiency="Intermediate"
+        />
       </div>
     ),
   },
@@ -67,8 +89,16 @@ const tabsData = [
         <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
         <Cards icon={MongodbImg} title="MongoDB" proficiency="Experienced" />
         <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
-        <Cards icon={KubernetsImg} title="Kubernets" proficiency="Intermediate" />
-        <Cards icon={TerraformImg} title="Terraform" proficiency="Intermediate" />
+        <Cards
+          icon={KubernetsImg}
+          title="Kubernets"
+          proficiency="Intermediate"
+        />
+        <Cards
+          icon={TerraformImg}
+          title="Terraform"
+          proficiency="Intermediate"
+        />
         <Cards icon={GcpImg} title="GCP" proficiency="Junior" />
       </div>
     ),
@@ -78,7 +108,11 @@ const tabsData = [
     content: (
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 justify-center">
         <Cards icon={FigmaImg} title="Figma" proficiency="Intermediate" />
-        <Cards icon={PhotoshopImg} title="PhotoShop" proficiency="Intermediate" />
+        <Cards
+          icon={PhotoshopImg}
+          title="PhotoShop"
+          proficiency="Intermediate"
+        />
       </div>
     ),
   },
@@ -86,13 +120,20 @@ const tabsData = [
     label: 'Tests',
     content: (
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-        <Cards icon={JestImg} title="Jest (Unit Test)" proficiency="Intermediate" />
-        <Cards icon={CypressImg} title="Cypress (E2E)" proficiency="Intermediate" />
+        <Cards
+          icon={JestImg}
+          title="Jest (Unit Test)"
+          proficiency="Intermediate"
+        />
+        <Cards
+          icon={CypressImg}
+          title="Cypress (E2E)"
+          proficiency="Intermediate"
+        />
       </div>
     ),
   },
 ]
-
 
 export function TabsTools() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0)
@@ -126,7 +167,7 @@ export function TabsTools() {
         <div className="w-3/4 py-4">{tabsData[activeTabIndex].content}</div>
       </div>
 
-      <div className='flex flex-col md:hidden'>
+      <div className="flex flex-col md:hidden">
         {tabsData.map((tab, idx) => (
           <>
             <h1
@@ -139,7 +180,6 @@ export function TabsTools() {
           </>
         ))}
       </div>
-
     </>
   )
 }
