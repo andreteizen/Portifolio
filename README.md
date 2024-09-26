@@ -4,11 +4,10 @@
 
 - Navbar (Ok)
 - Hero Section (Ok)
-- About Me Section
-- Tools Section
-- Portfolio section
-- Contact me Section
-- Footer
+- About Me Section (Ok)
+- Tools Section (Ok)
+- Portfolio section (Ok)
+- Footer (Ok)
 
 ### Descrição
 

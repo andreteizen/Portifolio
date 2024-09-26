@@ -115,7 +115,7 @@ export default function Home() {
           src={perfilPhoto}
           alt="Picture of the author"
           sizes="40vw"
-          className="border-secondary-color z-[90] w-60 h-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105 md:w-auto"
+          className="border-secondary-color z-[90] w-60 h-auto border-4 shadow-md transition-transform duration-500 hover:rotate-2 hover:scale-105 md:w-[400px]"
           style={{
             clipPath:
               'polygon(10% 0%, 90% 0%, 100% 30%, 90% 100%, 10% 100%, 0% 70%)',
@@ -161,6 +161,28 @@ export default function Home() {
 
         <PortfolioGroup
           className="mt-20"
+          printscreen={PrtrackPrint}
+          title="PR Track"
+          shortDescription="A social networking and activity tracking platform for endurance sports enthusiasts, offering user login, interaction features, performance scoring for each sport, and integration with APIs like Strava, Google Login, SendGrid, and AWS Lambda."
+          description={`An interactive platform for endurance sports enthusiasts that combines social networking with activity tracking.\n Users can log in, connect with others, track their performance across various sports, and view personalized performance scores, fostering an engaging and competitive environment.`}
+          projectType="Fullstack"
+          live="https://www.prtrack.live/"
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'TailwindCSS',
+            'ContextAPI',
+            'AWS',
+            'PrismaORM',
+            'Jest',
+            'Terraform',
+            'Cypress',
+            'Figma',
+          ]}
+        />
+        <PortfolioGroup
+          className="mt-20"
           printscreen={HilinkPrint}
           title="Hilink"
           shortDescription="A travel platform designed to inspire your next adventure, offering curated routes and destination guides."
@@ -193,29 +215,6 @@ export default function Home() {
             'Typescript',
             'TailwindCSS',
             'ESLint',
-            'Figma',
-          ]}
-        />
-
-        <PortfolioGroup
-          className="mt-20"
-          printscreen={PrtrackPrint}
-          title="PR Track"
-          shortDescription="A social networking and activity tracking platform for endurance sports enthusiasts, offering user login, interaction features, performance scoring for each sport, and integration with APIs like Strava, Google Login, SendGrid, and AWS Lambda."
-          description={`An interactive platform for endurance sports enthusiasts that combines social networking with activity tracking.\n Users can log in, connect with others, track their performance across various sports, and view personalized performance scores, fostering an engaging and competitive environment.`}
-          projectType="Fullstack"
-          live="https://www.prtrack.live/"
-          tools={[
-            'Next.JS',
-            'React.JS',
-            'Typescript',
-            'TailwindCSS',
-            'ContextAPI',
-            'AWS',
-            'PrismaORM',
-            'Jest',
-            'Terraform',
-            'Cypress',
             'Figma',
           ]}
         />
