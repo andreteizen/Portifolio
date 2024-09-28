@@ -34,7 +34,7 @@ export default function Home() {
       <DevelopmentBanner />
 
       {/* Main section */}
-      <div className="my-16 flex w-full flex-col-reverse items-center justify-center p-6 md:flex-row md:justify-evenly md:p-14">
+      <div className="my-16 flex w-full flex-col-reverse items-center justify-center p-6 md:flex-row md:justify-evenly md:p-14 overflow-x-hidden">
         <div className="flex flex-col items-center leading-loose w-full md:w-fit">
           <div className="font-regular mt-6 md:mt-0 mb-2 text-2xl md:text-3xl">
             Hello, I am

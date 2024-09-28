@@ -6,16 +6,16 @@ import Link from 'next/link'
 
 export default async function Footer() {
   return (
-    <div className="mt-36 flex min-h-[100px] w-full items-center justify-between px-[20%] shadow-2xl">
-      <p className="font-ligh w-fit whitespace-nowrap">
+    <div className="mt-36 flex min-h-[100px] w-full items-center justify-between px-[20%] shadow-2xl  flex-col md:flex-row">
+      <p className="font-light w-fit whitespace-nowrap">
         All rights reserved © 2023 <b className="font-bold">André Teizen</b>
       </p>
 
-      <div className="hidden md:flex h-10 w-fit flex-row justify-evenly space-x-7">
+      <div className="flex h-10 w-fit flex-row justify-evenly space-x-7">
         <Link target="_blank" href="https://github.com/andreteizen" passHref>
           <GitHubLogoIcon
-            width="2.5rem"
-            height="2.5rem"
+            width="2rem"
+            height="2rem"
             className="hover:text-primary-color/60"
           />
         </Link>
@@ -25,8 +25,8 @@ export default async function Footer() {
           passHref
         >
           <LinkedInLogoIcon
-            width="2.5rem"
-            height="2.5rem"
+            width="2rem"
+            height="2rem"
             className="hover:text-primary-color/60"
           />
         </Link>
@@ -37,8 +37,8 @@ export default async function Footer() {
         >
           <FontAwesomeIcon
             icon={faDiscord}
-            width="2.5rem"
-            height="2.5rem"
+            width="2rem"
+            height="2rem"
             className="hover:text-primary-color/60"
           />
         </Link>
@@ -46,8 +46,8 @@ export default async function Footer() {
         <Link target="_blank" href="https://wa.me/5514991823065" passHref>
           <FontAwesomeIcon
             icon={faWhatsapp}
-            width="2.5rem"
-            height="2.5rem"
+            width="2rem"
+            height="2rem"
             className="hover:text-primary-color/60"
           />
         </Link>
@@ -55,8 +55,8 @@ export default async function Footer() {
         <Link target="_blank" href="mailto:andre.teizen@gmail.com" passHref>
           <FontAwesomeIcon
             icon={faEnvelope}
-            width="2.5rem"
-            height="2.5rem"
+            width="2rem"
+            height="2rem"
             className="hover:text-primary-color/60"
           />
         </Link>

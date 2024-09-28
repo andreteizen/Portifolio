@@ -35,7 +35,7 @@ export default function PortfolioGroup({
       target="_blank"
       className={twMerge(
         // Usando classes responsivas de largura e altura
-        'relative flex flex-col md:flex-row h-[450px] md:h-[350px] w-[90%] md:w-[70%] mx-auto items-center justify-center rounded-3xl bg-white text-black shadow-md transition-transform duration-300 hover:scale-105',
+        'relative flex flex-col md:flex-row h-fit md:h-[350px] w-[90%] md:w-[70%] mx-auto items-center justify-center rounded-3xl bg-white text-black shadow-md transition-transform duration-300 hover:scale-105',
         className,
       )}
     >
