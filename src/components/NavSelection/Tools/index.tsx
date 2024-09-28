@@ -34,7 +34,7 @@ const tabsData = [
   {
     label: 'Front-end',
     content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Cards icon={ReactImg} title="React.JS" proficiency="Experienced" />
         <Cards icon={NextImg} title="Next.JS" proficiency="Experienced" />
         <Cards
@@ -73,7 +73,7 @@ const tabsData = [
   {
     label: 'Back-end',
     content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Cards icon={NodeImg} title="NodeJS" proficiency="Experienced" />
         <Cards icon={PrismaImg} title="PrismaORM" proficiency="Experienced" />
         <Cards icon={SqlImg} title="SQL" proficiency="Experienced" />
@@ -85,7 +85,7 @@ const tabsData = [
   {
     label: 'Infrastructure',
     content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Cards icon={AwsImg} title="AWS" proficiency="Experienced" />
         <Cards icon={MongodbImg} title="MongoDB" proficiency="Experienced" />
         <Cards icon={DockerImg} title="Docker" proficiency="Intermediate" />
@@ -106,7 +106,7 @@ const tabsData = [
   {
     label: 'Web Design',
     content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4 justify-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
         <Cards icon={FigmaImg} title="Figma" proficiency="Intermediate" />
         <Cards
           icon={PhotoshopImg}
@@ -119,7 +119,7 @@ const tabsData = [
   {
     label: 'Tests',
     content: (
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Cards
           icon={JestImg}
           title="Jest (Unit Test)"
