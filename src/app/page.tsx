@@ -13,6 +13,8 @@ import PortfolioGroup from '@/components/PortfolioGroup'
 import PrtrackPrint from '@public/Portfolio/PRTrack2.png'
 import CarhubPrint from '@public/Portfolio/carhub.png'
 import HilinkPrint from '@public/Portfolio/hilink.png'
+import PortfolioPrint from '@public/Portfolio/portfolio.png'
+
 import Footer from '@/components/Footer'
 import { DevelopmentBanner } from '@/components/DevelopmentBanner'
 
@@ -181,11 +183,32 @@ export default function Home() {
             'Figma',
           ]}
         />
+
+        <PortfolioGroup
+          className="mt-20"
+          printscreen={PortfolioPrint}
+          title="Portfolio"
+          shortDescription="I built this portfolio to seek opportunities and showcase all the tools I use or have used throughout my years as a web developer."
+          description={`Showcase your front-end expertise with a portfolio that highlights your ability to create intuitive and visually appealing web interfaces. Demonstrate your mastery of modern frameworks like React and Next.js, along with your proficiency in CSS and HTML. Let your portfolio be your digital resume, attracting potential employers and clients alike.`}
+          projectType="Fullstack"
+          live="https://portifolio-teizen.vercel.app/"
+          githubLink="https://github.com/andreteizen/Portifolio"
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'TailwindCSS',
+            'ESLint',
+            'Figma',
+            'Framer Motion',
+          ]}
+        />
+
         <PortfolioGroup
           className="mt-20"
           printscreen={HilinkPrint}
           title="Hilink"
-          shortDescription="A travel platform designed to inspire your next adventure, offering curated routes and destination guides."
+          shortDescription="I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion."
           description={`Fuel your wanderlust with our interactive travel platform. Find the perfect route, connect with like-minded travelers, and share your adventures. Whether you're seeking off-the-beaten-path experiences or well-trodden paths, we've got you covered.`}
           projectType="Front-end"
           live="https://travel-app-red-eta.vercel.app/"
@@ -197,6 +220,7 @@ export default function Home() {
             'TailwindCSS',
             'ESLint',
             'Figma',
+            'Framer Motion',
           ]}
         />
 
@@ -204,7 +228,7 @@ export default function Home() {
           className="mt-20"
           printscreen={CarhubPrint}
           title="CarHub"
-          shortDescription="Streamline your car rental experience with our effortless booking process."
+          shortDescription="I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion."
           description={`Save time and money when renting a car. With our comparator, you can easily find the vehicle that best suits your travel style and budget. In addition, we offer a wide variety of vehicles, from economy to luxury, so you can choose what best meets your needs.`}
           projectType="Front-end"
           live="https://car-showcase-two-mu.vercel.app/"
@@ -216,6 +240,7 @@ export default function Home() {
             'TailwindCSS',
             'ESLint',
             'Figma',
+            'Framer Motion',
           ]}
         />
       </div>

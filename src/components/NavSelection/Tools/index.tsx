@@ -30,6 +30,11 @@ import TerraformImg from '@public/Icons/terraform.png'
 import FigmaImg from '@public/Icons/figma.svg'
 import PhotoshopImg from '@public/Icons/photoshop.svg'
 
+import PysparkImg from '@public/Icons/pyspark.png'
+import PythonImg from '@public/Icons/python.png'
+import PandasImg from '@public/Icons/pandas.png'
+import DatabricksImg from '@public/Icons/databricks.png'
+
 const tabsData = [
   {
     label: 'Front-end',
@@ -133,6 +138,21 @@ const tabsData = [
       </div>
     ),
   },
+  {
+    label: 'Data',
+    content: (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <Cards icon={PythonImg} title="Python" proficiency="Experienced" />
+        <Cards icon={PandasImg} title="Pandas" proficiency="Intermediate" />
+        <Cards icon={PysparkImg} title="PySpark" proficiency="Intermediate" />
+        <Cards
+          icon={DatabricksImg}
+          title="Databricks"
+          proficiency="Intermediate"
+        />
+      </div>
+    ),
+  },
 ]
 
 export function TabsTools() {
@@ -149,11 +169,11 @@ export function TabsTools() {
   return (
     <>
       <div className="md:m-20 hidden md:flex h-[20vw] w-full flex-col items-center md:justify-items-stretch md:px-10">
-        <div className="flex h-fit md:w-[60%] flex-row justify-between space-x-5">
+        <div className="flex h-fit md:w-fit flex-row justify-between space-x-5">
           {tabsData.map((tab, idx) => (
             <Button
               key={idx}
-              className="px-10 py-2 text-lg"
+              className="px-10 py-2 text-lg whitespace-nowrap"
               active={activeTabIndex === idx}
               onClick={(e) => handleClick(e, idx)}
             >
