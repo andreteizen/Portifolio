@@ -13,8 +13,8 @@ const poppins = Poppins({
 
 const websiteAuthor = { name: 'André Teizen' } as Author
 export const metadata: Metadata = {
-  title: 'Portifolio',
-  description: 'Meu portifolio',
+  title: 'Portfolio',
+  description: 'My portfolio to show my skills and experience',
   authors: websiteAuthor,
   other: {
     'google-site-verification': 'kam8Jv2DTIOkoYIxIh90eMj5-ZskEGxqaY9dsNHyCgY',

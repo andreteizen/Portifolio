@@ -191,7 +191,7 @@ export default function Home() {
           shortDescription="I built this portfolio to seek opportunities and showcase all the tools I use or have used throughout my years as a web developer."
           description={`Showcase my front-end expertise with a portfolio that highlights my ability to create intuitive and visually appealing web interfaces. Demonstrate my mastery of modern frameworks like Next.js and TailwindCSS, along with my proficiency in CSS and HTML.`}
           projectType="Fullstack"
-          live="https://portifolio-teizen.vercel.app/"
+          live="https://portfolio-teizen.vercel.app/"
           githubLink="https://github.com/andreteizen/Portifolio"
           tools={[
             'Next.JS',
