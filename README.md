@@ -1,4 +1,4 @@
-## Projeto do Portifolio
+## Projeto do Portfolio
 
 #### FASE: Desenvolvimento (2/7):
 
@@ -11,7 +11,7 @@
 
 ### Descrição
 
-Projeto do meu portifolio pessoal, nele utilizo muitas ferramentas modernas que são utilizadas no desenvolvimento web hoje em dia:
+Projeto do meu portfolio pessoal, nele utilizo muitas ferramentas modernas que são utilizadas no desenvolvimento web hoje em dia:
 
 ##### Design:
 
