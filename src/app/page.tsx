@@ -14,6 +14,7 @@ import PrtrackPrint from '@public/Portfolio/PRTrack2.png'
 import CarhubPrint from '@public/Portfolio/carhub.png'
 import HilinkPrint from '@public/Portfolio/hilink.png'
 import PortfolioPrint from '@public/Portfolio/portfolio.png'
+import NftmarketPrint from '@public/Portfolio/starsoft-challenge.png'
 
 import Footer from '@/components/Footer'
 import { DevelopmentBanner } from '@/components/DevelopmentBanner'
@@ -181,6 +182,27 @@ export default function Home() {
             'Terraform',
             'Cypress',
             'Figma',
+            'Framer Motion',
+          ]}
+        />
+
+        <PortfolioGroup
+          className="mt-20"
+          printscreen={NftmarketPrint}
+          title="Front-end Challenge - NFT Marketplace"
+          shortDescription="Project for Front-end Developer Challenge"
+          description={`Page created for a Front-end challenge, I use many modern tools like Redux, Next.JS and SASS`}
+          projectType="Front-end"
+          live="https://nft-market-challenge.vercel.app/"
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'SASS',
+            'Framer Motion',
+            'Redux',
+            'Jest',
+            'Figma',
           ]}
         />
 
@@ -198,7 +220,6 @@ export default function Home() {
             'React.JS',
             'Typescript',
             'TailwindCSS',
-            'ESLint',
             'Figma',
             'Framer Motion',
           ]}
@@ -209,7 +230,7 @@ export default function Home() {
           printscreen={HilinkPrint}
           title="Hilink"
           shortDescription="I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion."
-          description={`Fuel your wanderlust with our interactive travel platform. Find the perfect route, connect with like-minded travelers, and share your adventures. Whether you're seeking off-the-beaten-path experiences or well-trodden paths, we've got you covered.`}
+          description={`I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion.`}
           projectType="Front-end"
           live="https://travel-app-red-eta.vercel.app/"
           githubLink="https://github.com/andreteizen/travel_app"
@@ -218,7 +239,6 @@ export default function Home() {
             'React.JS',
             'Typescript',
             'TailwindCSS',
-            'ESLint',
             'Figma',
             'Framer Motion',
           ]}
@@ -229,7 +249,7 @@ export default function Home() {
           printscreen={CarhubPrint}
           title="CarHub"
           shortDescription="I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion."
-          description={`Save time and money when renting a car. With our comparator, you can easily find the vehicle that best suits your travel style and budget. In addition, we offer a wide variety of vehicles, from economy to luxury, so you can choose what best meets your needs.`}
+          description={`I built this platform to learn and master tools such as Next.js, Tailwind, and Framer Motion.`}
           projectType="Front-end"
           live="https://car-showcase-two-mu.vercel.app/"
           githubLink="https://github.com/andreteizen/Car-showcase"
@@ -238,7 +258,6 @@ export default function Home() {
             'React.JS',
             'Typescript',
             'TailwindCSS',
-            'ESLint',
             'Figma',
             'Framer Motion',
           ]}
