@@ -189,15 +189,12 @@ export function TabsTools() {
 
       <div className="flex flex-col md:hidden">
         {tabsData.map((tab, idx) => (
-          <>
-            <h1
-              key={idx}
-              className="px-10 py-2 text-xl font-semibold text-center mt-10 mb-4"
-            >
+          <div key={idx}>
+            <h1 className="px-10 py-2 text-xl font-semibold text-center mt-10 mb-4">
               {tab.label}
             </h1>
             <div>{tabsData[idx].content}</div>
-          </>
+          </div>
         ))}
       </div>
     </>
