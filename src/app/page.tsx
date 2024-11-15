@@ -15,6 +15,7 @@ import CarhubPrint from '@public/Portfolio/carhub.png'
 import HilinkPrint from '@public/Portfolio/hilink.png'
 import PortfolioPrint from '@public/Portfolio/portfolio.png'
 import NftmarketPrint from '@public/Portfolio/starsoft-challenge.png'
+import TreeviewPrint from '@public/Portfolio/tractian-challenge.png'
 
 import Footer from '@/components/Footer'
 import { DevelopmentBanner } from '@/components/DevelopmentBanner'
@@ -194,6 +195,7 @@ export default function Home() {
           description={`Page created for a Front-end challenge, I use many modern tools like Redux, Next.JS and SASS`}
           projectType="Front-end"
           live="https://nft-market-challenge.vercel.app/"
+          githubLink="https://github.com/andreteizen/frontend-challenge"
           tools={[
             'Next.JS',
             'React.JS',
@@ -203,6 +205,27 @@ export default function Home() {
             'Redux',
             'Jest',
             'Figma',
+          ]}
+        />
+
+        <PortfolioGroup
+          className="mt-20"
+          printscreen={TreeviewPrint}
+          title="Front-end Challenge - Tree View"
+          shortDescription="Project for Front-end Developer Challenge"
+          description={`Page created for a Front-end challenge, I use many modern tools like Redux, Next.JS and TailwindCSS`}
+          projectType="Front-end"
+          live="https://challenge-frontend-tree-view.vercel.app/"
+          githubLink="https://github.com/andreteizen/challenge-frontend-tree-view"
+          tools={[
+            'Next.JS',
+            'React.JS',
+            'Typescript',
+            'TailwindCSS',
+            'Framer Motion',
+            'Redux',
+            'Jest',
+            'react-window',
           ]}
         />
 
